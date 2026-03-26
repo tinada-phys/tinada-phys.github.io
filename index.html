@@ -1,89 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research homepage" />
+  <title>Tomoya Inada | Research Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">Tomoya Inada</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Theoretical Physics / Cosmology</p>
+          <h1>Research Homepage</h1>
+          <p class="lead">
+            Master's Student, Graduate School of Arts and Sciences,<br>
+            The University of Tokyo
+          </p>
+          <p class="hero-description">
+            I work on quantum field theory in curved spacetime, cosmology, and theoretical constraints on effective field theories.
+            This template is designed for GitHub Pages and can be customized section by section.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">View Research</a>
+            <a class="button button-secondary" href="#contact">Get in Touch</a>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+
+        <aside class="profile-card">
+          <div class="profile-card-inner">
+            <div class="avatar">TI</div>
+            <h2>Tomoya Inada</h2>
+            <p class="profile-role">Theoretical Physics / Cosmology</p>
+            <ul class="profile-meta">
+              <li>University of Tokyo</li>
+              <li>Tokyo, Japan</li>
+              <li><a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            </ul>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>Short academic profile</h2>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div class="card">
+          <p>
+            Welcome to my academic homepage. I am interested in the interface of high-energy theory and cosmology,
+            especially inflation, de Sitter spacetime, unitarity bounds, and quantum field theory in expanding universes.
+            You can use this section for a concise biography, current position, and academic background.
+          </p>
+          <p>
+            Replace this text with your own profile, research summary, and links to your CV, INSPIRE profile, ORCID, or Google Scholar.
+          </p>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    </section>
+
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Research</p>
+          <h2>Main interests</h2>
+        </div>
+        <div class="grid three-col">
+          <article class="card feature-card">
+            <h3>Quantum Field Theory in de Sitter</h3>
+            <p>
+              Correlators, wavefunction methods, vacuum structure, and consistency conditions in curved backgrounds.
+            </p>
+          </article>
+          <article class="card feature-card">
+            <h3>Perturbative Unitarity Bounds</h3>
+            <p>
+              Theoretical constraints on effective theories, with applications to cosmology and inflationary settings.
+            </p>
+          </article>
+          <article class="card feature-card">
+            <h3>Inflation and EFT</h3>
+            <p>
+              Early-universe model building, cosmological observables, and UV-sensitive aspects of inflationary dynamics.
+            </p>
+          </article>
+        </div>
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Publications</p>
+          <h2>Selected works</h2>
+        </div>
+        <div class="card publication-list">
+          <article class="publication-item">
+            <h3>Paper Title 1</h3>
+            <p class="publication-meta">Author Name, Coauthor Name</p>
+            <p>
+              Journal / arXiv information goes here. Add a one-line summary if helpful.
+              <a href="#">[arXiv]</a>
+              <a href="#">[Journal]</a>
+            </p>
+          </article>
+          <article class="publication-item">
+            <h3>Paper Title 2</h3>
+            <p class="publication-meta">Author Name, Coauthor Name</p>
+            <p>
+              Journal / arXiv information goes here. Add a one-line summary if helpful.
+              <a href="#">[arXiv]</a>
+              <a href="#">[Journal]</a>
+            </p>
+          </article>
+          <article class="publication-item">
+            <h3>Paper Title 3</h3>
+            <p class="publication-meta">Author Name, Coauthor Name</p>
+            <p>
+              Journal / arXiv information goes here. Add a one-line summary if helpful.
+              <a href="#">[arXiv]</a>
+              <a href="#">[Journal]</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>Links and contact</h2>
+        </div>
+        <div class="grid two-col">
+          <div class="card">
+            <ul class="link-list">
+              <li><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+              <li><strong>CV:</strong> <a href="#">Add your CV link</a></li>
+              <li><strong>Google Scholar:</strong> <a href="#">Add your profile link</a></li>
+              <li><strong>ORCID:</strong> <a href="#">Add your ORCID</a></li>
+              <li><strong>GitHub:</strong> <a href="#">Add your GitHub</a></li>
+            </ul>
+          </div>
+          <div class="card note-card">
+            <h3>Customization notes</h3>
+            <p>
+              For GitHub Pages, place <code>index.html</code> and <code>styles.css</code> in the root of your repository.
+              Then enable Pages in the repository settings.
+            </p>
+            <p>
+              This template uses only HTML and CSS, so it is lightweight, easy to edit, and suitable for a research homepage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Tomoya Inada</p>
+      <p>Built for GitHub Pages</p>
     </div>
   </footer>
 </body>
